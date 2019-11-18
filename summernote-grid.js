@@ -34,7 +34,8 @@
             return ui.buttonGroup([
                 ui.button({
                     className: 'dropdown-toggle',
-                    contents: '<i class="'+ icons.grid +'"/> <span class="note-icon-caret"></span>',
+                    contents: '<i class="'+ icons.grid +'"/>',
+                    container: 'body',
                     tooltip: lang.grid.tooltip,
                     data: {
                         toggle: 'dropdown'
@@ -121,7 +122,7 @@
                 onGridInsert: null
             },
             icons: {
-                grid: "glyphicon glyphicon-th"
+                grid: "fa fa-th"
             }
         },
         lang: {
@@ -129,6 +130,12 @@
                 grid: {
                     tooltip: "Columns",
                     label: "Columns",
+                }
+            },
+            'nl-NL': {
+                grid: {
+                    tooltip: "Kolommen",
+                    label: "Kolommen",
                 }
             }
         },
